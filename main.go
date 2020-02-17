@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	//"github.com/jgvonk/fly/flying"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -14,6 +15,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func takeoff(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "takeoff")
 	fmt.Println("takeoff")
+	//flying.start()
 }
 
 func topos(w http.ResponseWriter, r *http.Request) {
